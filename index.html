@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     <link rel="stylesheet" href="./assets/style.css"/>
     <title>Work Day Scheduler.</title>
   </head>
-
   <body>
     <header class="jumbotron">
       <h1 class="display-3">Your day at a glance.</h1>
@@ -21,58 +21,52 @@
     <section class="notification-center-hub" id="user-notification">"WHERE APP CODE WILL ADD TO LOCAL STORAGE FOR USER TO LOGGED INFO- EDIT THIS ONCE JS IS DONE"</section>
     <div class="container">
       <!-- Timeblocks go here -->
-      <div id="8-hundred" class="row time-block">
-        <div class="CALL-ME-CLASS">08:00</div>
-        <textarea class="ADD-CLASS-NAME-LOOK-UP"></textarea>
-        <button class="btn saveBtn ADD-CLASS-NAME-LOOK-UP-"><i class="LOOK-ME-UP-TOO"></i></button>
+      <div id="8" class="row time-block">
+        <div class="col-1">08:00</div>
+        <textarea class="col-10 description"></textarea>
+        <button class="btn saveBtn col-1"><i class="fas fa-save"></i></button>
       </div>
-    <div id="09-hundred" class="row time-block">
-      <div class="CALL-ME-CLASS">09:00</div>
-      <textarea class="ADD-CLASS-NAME-LOOK-UP"></textarea>
-      <button class="btn saveBtn ADD-CLASS-NAME-LOOK-UP"><i class="LOOK-ME-UP-TOO"></i></button>
+    <div id="9" class="row time-block">
+      <div class="col-1">09:00</div>
+      <textarea class="col-10 description"></textarea>
+      <button class="btn saveBtn col-1"><i class="fas fa-save"></i></button>
     </div>
-    <div id="10-hundred" class="row time-block">
-      <div class="CALL-ME-CLASS">10:00</div>
-      <textarea class="ADD-CLASS-NAME-LOOK-UP"></textarea>
-      <button class="btn saveBtn ADD-CLASS-NAME-LOOK-UP"><i class="LOOK-ME-UP-TOO"></i></button>
+    <div id="10" class="row time-block">
+      <div class="col-1">10:00</div>
+      <textarea class="col-10 description"></textarea>
+      <button class="btn saveBtn col-1"><i class="fas fa-save"></i></button>
     </div>
-    <div id="11-hundred" class="row time-block">
-      <div class="CALL-ME-CLASS">11:00</div>
-      <textarea class="ADD-CLASS-NAME-LOOK-UP"></textarea>
-      <button class="btn saveBtn ADD-CLASS-NAME-LOOK-UP"><i class="LOOK-ME-UP-TOO"></i></button>
+    <div id="11" class="row time-block">
+      <div class="col-1">11:00</div>
+      <textarea class="col-10 description"></textarea>
+      <button class="btn saveBtn col-1"><i class="fas fa-save"></i></button>
     </div>
-    <div id="12-hundred" class="row time-block">
-      <div class="CALL-ME-CLASS">12:00</div>
-      <textarea class="ADD-CLASS-NAME-LOOK-UP"></textarea>
-      <button class="btn saveBtn ADD-CLASS-NAME-LOOK-UP"><i class="LOOK-ME-UP-TOO"></i></button>
+    <div id="12" class="row time-block">
+      <div class="col-1">12:00</div>
+      <textarea class="col-10 description"></textarea>
+      <button class="btn saveBtn col-1"><i class="fas fa-save"></i></button>
     </div>
-    <div id="13-hundred" class="row time-block">
-      <div class="CALL-ME-CLASS">13:00</div>
-      <textarea class="ADD-CLASS-NAME-LOOK-UP"></textarea>
-      <button class="btn saveBtn ADD-CLASS-NAME-LOOK-UP"><i class="LOOK-ME-UP-TOO"></i></button>
+    <div id="13" class="row time-block">
+      <div class="col-1">13:00</div>
+      <textarea class="col-10 description"></textarea>
+      <button class="btn saveBtn col-1"><i class="fas fa-save"></i></button>
     </div>
-    <div id="14-hundred" class="row time-block">
-      <div class="CALL-ME-CLASS">14:00</div>
-      <textarea class="ADD-CLASS-NAME-LOOK-UP"></textarea>
-      <button class="btn saveBtn ADD-CLASS-NAME-LOOK-UP"><i class="LOOK-ME-UP-TOO"></i></button>
+    <div id="14" class="row time-block">
+      <div class="col-1">14:00</div>
+      <textarea class="col-10 description"></textarea>
+      <button class="btn saveBtn col-1"><i class="fas fa-save"></i></button>
     </div>
-    <div id="15-hundred" class="row time-block">
-      <div class="CALL-ME-CLASS">15:00</div>
-      <textarea class="ADD-CLASS-NAME-LOOK-UP"></textarea>
-      <button class="btn saveBtn ADD-CLASS-NAME-LOOK-UP"><i class="LOOK-ME-UP-TOO"></i></button>
+    <div id="15" class="row time-block">
+      <div class="col-1">15:00</div>
+      <textarea class="col-10 description"></textarea>
+      <button class="btn saveBtn col-1"><i class="fas fa-save"></i></button>
     </div>
-    <div id="16-hundred" class="row time-block">
-      <div class="CALL-ME-CLASS">16:00</div>
-      <textarea class="ADD-CLASS-NAME-LOOK-UP"></textarea>
-      <button class="btn saveBtn ADD-CLASS-NAME-LOOK-UP"><i class="LOOK-ME-UP-TOO"></i></button>
+    <div id="16" class="row time-block">
+      <div class="col-1">16:00</div>
+      <textarea class="col-10 description"></textarea>
+      <button class="btn saveBtn col-1"><i class="fas fa-save"></i></button>
     </div>
     
-
-
-
-
-    
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
