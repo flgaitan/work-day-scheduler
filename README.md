@@ -25,20 +25,21 @@ GITLAB REPOSITORY LINK :
 https://github.com/flgaitan/work-day-scheduler
 
 DEPLOYED WEBSITE LINK :
+https://flgaitan.github.io/work-day-scheduler/
 
 
-
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
-
-![alt text](assets/images/screenshot.png)
+![alt text](./assets/images/Screenshot%202022%20challenge5.png)
 
 ## Credits
 
+- https://momentjs.com/
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+- https://jquery.com/
 
-If you followed tutorials, include links to those here as well.
+- https://getbootstrap.com/docs/5.2/layout/containers/
+
+** I also utilized the help of a tutor **
+
 
 ## License
 

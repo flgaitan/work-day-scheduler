@@ -2,9 +2,6 @@
 var currentDayElement = $('#time-display');
 //var timeCurrent = moment().format();
 
-//var =
-//var =
-//var =
 
 //creating a function that will display the times: present, past and future in our page
 //to do this a for-loop was created that will run until the conditions are satisfied
@@ -33,11 +30,6 @@ function displayBackground(){
 };
 
 
-//let name = "Fiama"
-//let myName = "My name is" + name
-//let templateName = `my name is ${name}`
-
-
 // handle displaying the time using moment
 //moment().format("MMM Do YY"); 
 //moment().format('MMM DD, YYYY [at] hh:mm:ss a');
@@ -57,7 +49,7 @@ function currentDayEl() {
   displayBackground()
 
 //notification that appt was added
-  $('.usernotification').addClass('notification-center-hub');
+$('.usernotification').addClass('notification-center-hub');
 
 //now we have to display all the values to be gotten from Local Storage using getItem instead of setItem for each
 $('#8 .description').val(localStorage.getItem('8'))
