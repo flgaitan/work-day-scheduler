@@ -56,8 +56,10 @@ function currentDayEl() {
   currentDayEl() 
   displayBackground()
 
-//now we have to display all the values to be gotten from Local Storage using getItem instead of setItem for each
+//notification that appt was added
+  $('.usernotification').addClass('notification-center-hub');
 
+//now we have to display all the values to be gotten from Local Storage using getItem instead of setItem for each
 $('#8 .description').val(localStorage.getItem('8'))
 $('#9 .description').val(localStorage.getItem('9'))
 $('#10 .description').val(localStorage.getItem('10'))
