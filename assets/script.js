@@ -8,7 +8,7 @@ var currentDayElement = $('#time-display');
 //let currentTime = parseInt(moment().format("HH"));
 function displayBackground(){
   let currentTime = parseInt(moment().format("HH"));
-  console.log(currentTime)
+  //console.log(currentTime)
   for (let i=8; i<17; i++){
     if (currentTime === i){
       let currentElement = document.getElementById(`${i}`);
@@ -27,37 +27,39 @@ function displayBackground(){
 
     }    
   }
-};
+}
 
 
 // handle displaying the time using moment
 //moment().format("MMM Do YY"); 
 //moment().format('MMM DD, YYYY [at] hh:mm:ss a');
-function currentDayEl() {
-    var timeCurrent = moment().format("MMM Do YY"); 
+function currentDayEl(){
+    var timeCurrent = moment().format('MMM Do YY, h:mm:ss a'); 
     //console.log(currentDayElement)
     currentDayElement.text(timeCurrent)
     $('.saveBtn').on('click',function(){
       //store in localstorage, declaring values for row class(col-10 description) and row id values(hour)
-      var value = $(this).siblings('.description').val()
-      var time = $(this).parent().attr('id')
-      localStorage.setItem(time, value)
+      var value = $(this).siblings('.description').val();
+      var time = $(this).parent().attr('id');
+      localStorage.setItem(time, value);
+      //console.log(time);
+      //console.log(value);
   })
   }
 
-  currentDayEl() 
-  displayBackground()
+  currentDayEl(); 
+  displayBackground();
 
 //notification that appt was added
 $('.usernotification').addClass('notification-center-hub');
 
 //now we have to display all the values to be gotten from Local Storage using getItem instead of setItem for each
-$('#8 .description').val(localStorage.getItem('8'))
-$('#9 .description').val(localStorage.getItem('9'))
-$('#10 .description').val(localStorage.getItem('10'))
-$('#11 .description').val(localStorage.getItem('11'))
-$('#12 .description').val(localStorage.getItem('12'))
-$('#13 .description').val(localStorage.getItem('13'))
-$('#14 .description').val(localStorage.getItem('14'))
-$('#15 .description').val(localStorage.getItem('15'))
-$('#16 .description').val(localStorage.getItem('16'))
+$('#8 .description').val(localStorage.getItem('8'));
+$('#9 .description').val(localStorage.getItem('9'));
+$('#10 .description').val(localStorage.getItem('10'));
+$('#11 .description').val(localStorage.getItem('11'));
+$('#12 .description').val(localStorage.getItem('12'));
+$('#13 .description').val(localStorage.getItem('13'));
+$('#14 .description').val(localStorage.getItem('14'));
+$('#15 .description').val(localStorage.getItem('15'));
+$('#16 .description').val(localStorage.getItem('16'));
